@@ -87,19 +87,19 @@ function getDuration(start, end) {
     } else {
         let weekDistance = Math.floor(distance / (7 * 24 * 60 * 60 * 1000))
         if (weekDistance != 0) {
-            return weekDistance + ' weeks'
+            return weekDistance + ' week'
         } else {
             let daysDistance = Math.floor(distance / (24 * 60 * 60 * 1000))
             if (daysDistance != 0) {
-                return daysDistance + ' days ago'
+                return daysDistance + ' day'
             } else {
                 let hoursDistance = Math.floor(distance / (60 * 60 * 1000))
                 if (hoursDistance != 0) {
-                    return hoursDistance + ' hours ago'
+                    return hoursDistance + ' hour'
                 } else {
                     let minuteDistance = Math.floor(distance / (60 * 1000))
                     if (minuteDistance != 0) {
-                        return minuteDistance + ' minutes ago'
+                        return minuteDistance + ' minute'
                     } else {
                         let secondDistance = Math.floor(distance / 1000)
                         if (secondDistance != 0)
