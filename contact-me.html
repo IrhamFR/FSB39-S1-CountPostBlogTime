@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <Title>Contact Me</Title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a class="active" href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="project.html"> My Project </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="right-side">
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="contact-me">
+            <div class="contact-container">
+                <form action="">
+                    <h1>GET IN TOUCH</h1>
+                    <div class="input-form">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required placeholder="input your name">
+                    </div>
+                    <div class="input-form">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required placeholder="input your email">
+                    </div>
+                    <div class="input-form">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="text" required placeholder="input your phone number">
+                    </div>
+                    <div class="input-form">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="none" selected disabled hidden>please select</option>
+                            <option>Lets Talk</option>
+                            <option>Lets Collaboration</option>
+                            <option>Lets Create Project</option>
+                        </select>
+                    </div>
+                    <div class="input-form">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" cols="30" rows="5" placeholder="input your message"></textarea>
+                    </div>
+                    <div class="button-form">
+                        <button type="submit" onclick="getData()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+    <script src="/contact.js"></script>
+</html>

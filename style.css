@@ -1,0 +1,571 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+/* whole body */
+body {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(225, 231, 241);
+}
+
+/* navbar */
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 7vh;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-side {
+    flex: 50%;
+    padding-left: 90px;
+    padding-top: 5px;
+}
+
+nav .right-side {
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bolder;
+}
+
+nav .right-side a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(3, 12, 44);
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* name card */
+.personal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-content {
+    flex-direction: row;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    margin: 5%;
+    margin-top: 8%;
+    border: none;
+    padding: 40px 0px 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(79, 79, 79);
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-content .left {
+    flex: 65%;
+}
+
+.detail-bio {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.my-contact {
+    background-color: rgb(3, 12, 44);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 35px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-decoration: none;
+   
+}
+
+.my-cv {
+    color: rgb(3, 12, 44);
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.container-content .right {
+    flex: 35%;
+}
+
+.container-content .social a {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%; 
+    margin-right: 20px;
+    background-color: rgb(3, 12, 44);
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.container-card {
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    align-items: center;
+}
+
+.image-card {
+    height: 340px;
+    width: 100%;
+}
+
+.image-card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.name-card {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.personalName {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.personalJob {
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+/* contact me */
+.contact-me {
+    width: 400px;
+    margin: auto;
+    margin-top: 6.5%;
+    margin-bottom: 5%;
+}
+
+.contact-container {
+    box-sizing: border-box;
+    font-size: 20px; 
+    font-weight: 700;
+}
+
+.contact-container h1 {
+    text-align: center;
+    font-size: 34px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.input-form input {
+    width: 95.5%;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.input-form select {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.input-form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+    height: 100px;
+    resize: none;
+}
+
+.button-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-form button {
+    background-color: rgb(3, 12, 44);
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+/* project */
+.myProject-form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.form-container {
+    width: 30%;
+    margin: auto;
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+.form-container .date-time{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.date-time input {
+    width: 90%; 
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.start-date{
+    width: 95%;
+    padding-right: 5px;
+}
+
+.end-date{
+    width: 100%;
+}
+
+.myProject-form form textarea {
+    width: 99%;
+    height: 150px;
+}
+
+.checkBoxOuter {
+    font-size: 20px; 
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.checkBoxInner {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+
+.checkBoxLeft {
+    margin-right: 100px;
+}
+
+.input-project-image-group {
+    box-sizing: border-box;
+    width: 99%;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+
+.input-project-image-group label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-project-image-group label p {
+    font-weight: 700;
+    font-size: 10px;
+    margin: 0;
+    background-color: #c4c4c4;
+    padding: 10px 12px;
+    border-radius: 6px 0 0 6px;
+}
+
+.input-project-image-group label img {
+    cursor: pointer;
+}
+
+.button-group {
+    text-align: right;
+    width: 99%;
+}
+
+.myProject-form form button {
+    background-color: rgb(3, 12, 44);;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.myProject hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.project-list h1 {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-list-render {
+    width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgb(150, 150, 150);
+    margin: 0 8px 38px 8px;
+}
+
+.project-list-render p {
+    margin: 0;
+}
+
+.project-img {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+.project-img img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    margin-top: 14px;
+}
+
+.title-card-project {
+    font-weight: 700;
+    font-size: 22px;
+    color: #112B3C;
+    text-decoration: none;
+}
+
+.distance-card-project {
+    color: grey;
+    margin-bottom: 16px !important;
+    font-weight: 300;
+}
+
+.desc-card-project {
+    font-size: 14px;
+    margin-bottom: 18px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.icon-project {
+    display: flex;
+    align-items: center;
+}
+
+.icon-project i {
+    font-size: 28px;
+    margin-right: 18px;
+    color: grey;
+}
+
+.project-project-action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.edit-card-action {
+    width: 42%;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    color: gray;
+    text-decoration: none;
+}
+
+.delete-card-action {
+    width: 42%;
+    text-align: center;
+    padding: 8px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* project detail */
+.project-detail {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.project-detail-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-detail-header {
+    text-align: center;
+}
+
+.project-info {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.image-info {
+    width: 65%;
+    margin-right: 10px;
+}
+
+.image-info img {
+    width: 90%;
+    height: 300px;
+}
+
+.detail-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.detail-tech {
+    margin-top: 30px;
+}
+
+.tech-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-desc ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tech-desc ul li {
+    list-style: none;
+    margin-right: 32px;
+    margin-bottom: 18px;
+}
+
+.icon-style i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.text-style {
+    display: flex;
+    text-align: justify;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}

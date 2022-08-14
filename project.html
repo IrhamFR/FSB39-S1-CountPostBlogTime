@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <Title>Add Project</Title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a class="active" href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="project.html"> My Project </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right-side">
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div class="myProject">
+            <div class="myProject-form">
+                <div class="form-container">
+                    <form onsubmit="addProject(event)">
+                        <h1 class="titleProject">ADD MY PROJECT</h1>
+                        <div class="input-form">
+                            <label for="input-project-title">Title</label>
+                            <input type="text" id="input-project-title" placeholder="Type title here..." />
+                        </div>
+                        
+                        <div class="dateProject">
+                            <div class="date-time">
+                                <div class="start-date">
+                                    <label for="input-start-date">Start Date</label>
+                                    <input type="date" id="input-start-date">
+                                </div>
+                                <div class="end-date">
+                                    <label for="input-end-date">End Date</label>
+                                    <input type="date" id="input-end-date">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-form">
+                            <label for="input-desc-project">Description</label>
+                            <textarea type="text" id="input-desc-project" placeholder="Type description here..."></textarea>
+                        </div>
+                        <div class="checkBoxOuter">
+                            <label for="input-project-tech">Technologies</label>
+                            <div class="checkBoxInner">
+                                <div class="checkBoxLeft">
+                                    <div class="itemCheckBox">
+                                        <input type="checkbox" id="nodejs" class="project-checkbox" value="fa-brands fa-node-js">
+                                        <label for="nodejs">Node Js</label>
+                                    </div>
+                                    <div class="itemCheckBox">
+                                        <input type="checkbox" id="reactjs" class="project-checkbox" value="fa-brands fa-react">
+                                        <label for="reactjs">React Js</label>
+                                    </div>
+                                </div>    
+        
+                                <div class="checkBoxRight">
+                                    <div class="itemCheckBox">
+                                        <input type="checkbox" id="vuejs" class="project-checkbox" value="fa-brands fa-vuejs">
+                                        <label for="vuejs">Vue Js</label>
+                                    </div>
+                                    <div class="itemCheckBox">
+                                        <input type="checkbox" id="angular" class="project-checkbox" value="fa-brands fa-angular">
+                                        <label for="angular">Angular</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="input-form">
+                            <label>Upload Image</label>
+                            <div class="input-project-image-group">
+                                <label for="input-project-image">
+                                    <p>Attach File</p>
+                                    <img src="assets/img/file.png" alt="file" />
+                                </label>
+                                <input type="file" id="input-project-image" hidden />
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit">Create Project</button>
+                        </div>
+                    </form>
+                </div>
+            </div>      
+        </div>
+
+        <hr class="line" />
+
+        <div class="project-list">
+            <h1 class ="titleProject">MY PROJECT</h1>
+            <div class="project-container" id="project-list-render">
+                <div class="project-list-render">
+                    <div class="project-img">
+                        <img src="assets/img/look.jpg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <a href="project-detail.html" class="title-card-project">Programming Nowadays</a>
+                        <p class="distance-card-project">Duration : 1 Week</p>
+                        <p class="desc-card-project">Computer programming is the process of performing 
+                            a particular computation (or more generally, accomplishing a specific 
+                            computing result)</p>
+                        <div class="icon-project">
+                            <div class="item-icon-project">
+                                <i class="fa-brands fa-node-js"></i>
+                            </div>
+                            <div class="item-icon-project">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="item-icon-project">
+                                <i class="fa-brands fa-vuejs"></i>
+                            </div>
+                            <div class="item-icon-project">
+                                <i class="fa-brands fa-angular"></i>
+                            </div>
+                        </div>
+                        <div class="project-project-action">
+                            <a href="#" class="edit-card-action">edit</a>
+                            <a href="#" class="delete-card-action">delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="project.js"></script>
+</html>
